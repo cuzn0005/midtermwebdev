@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+*{
+    margin: 0px;
+    boxing-sizing:border-box;
+    padding:0px;
+}
+
+html{
+    font-size: 1em;
+}
+
+body{
+    font-family:'Helvetica Neue', Calibri, Verdana, sans-serif;
+    line-height:3rem;
+    font-weight: 400;
+    color: #69FA5D;
+}
+
+header h1{
+    
+    margin: 0;
+    font-size: 2rem;
+    top: 7rem;
+    position: relative;
+}
+
+h1, h2, h3 {
+    margin: 50px 50px 50px;
+    font-weight: inherit;
+    text-align: center;
+    color: #A6FFF8;
+    line-height: inherit;
+    font-size: 3rem;
+}
+
+p{
+    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    font-weight: 5;
+}
+
+aside.side p{
+    font-size: 15px;
+}
+
+nav.mainnav ul{
+    list-style:none;
+}
+
+nav.mainnav ul li a {
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #7F54E8 ;
+    border-bottom: 1px solid #776650;
+    color: #A6FFF8;
+    font-size: 20px;
+}
+
+nav.mainnav ul li a:hover{
+    background: #5EA5FF;
+    color: #000000;
+}
+
+header.masthead{
+    background: url("http://codingconcepts.net/fvhs/wp-content/uploads/2014/07/animals_widewallpaper_cat_74664.jpg") no-repeat;
+        background-size: 70em 50em;
+    padding: 9rem 0 9rem 0;
+    background-position:bottom;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+}
+
+main.content{
+    padding: 1rem;
+    width:63%;
+}
+
+image.left{
+    float: left;
+    margin: 0.25rem;
+}
+
+image.right{
+    float:right;
+    margin 0.25rem;
+}
+
+aside.side{
+    padding: 1rem;
+    width: 37%;
+}
+
+footer.footer{
+    clear:both;
+    padding: 1rem;
+    color: #A6FFF8;
+    background-color:#000005;
+}
+
+img{
+    width:100%;
+}
+
+@media all and (max-width:60em) and (min-width:35em){
+    
+    header.masthead{
+        background-size: 100em 60em;
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+    
+    header h1{
+        position: relative;
+        top: 7rem;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+    
+    aside.side p{
+        font-size: 1rem;
+    }
+    
+    div.wrapper{
+        margin: 0 auto;
+    }
+    
+    nav.mainnav ul {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+    
+    nav.mainnav ul li {
+        width: 25%;
+        display: table-cell;
+        text-align: center;
+    }
+    
+    main.content{
+        width: 63%;
+        float: left;
+    }
+    
+    aside.side{
+        width: 27%;
+        float: right;
+        
+    }
+}
+
+@media all and (min-width:60em){
+    header h1{
+        position: relative;
+        top: 7rem;
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    aside.side p{
+        font-size: 1rem;
+    }
+    div.wrapper{
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    
+    header.masthead{
+        background-size: 100em 60em;
+        padding: 9rem;
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+    
+    nav.mainnav ul{
+        width: 25%;
+        float:left;
+        background-image: url('http://media4.popsugar-assets.com/files/2014/09/19/978/n/1922507/4bc5042ee37fa1f9_thumb_temp_cover_file13465311411161397.xxxlarge/i/Funny-Cat-Costumes.jpg');
+        background-size: 100%;
+        height: 1000px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    main.content{
+        column-count: 2;
+        -webkit-column-count:2;
+        -moz-column-count:2;
+        width: 50%;
+        float: left;
+    }
+    
+    aside.side{
+        width: 20%;
+        float: right;
+    }
+    
+    img.left{
+        float: none;
+        margin: 0.25rem;
+    }
+    
+    img.right{
+        float: none;
+        margin: 0.25rem;
+    }
+}
+    
+        
